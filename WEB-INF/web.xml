@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  	<filter>
+ 		<display-name>EncondingFilter</display-name>
+ 		<filter-name>EncondingFilter</filter-name>
+ 		<filter-class>web.filter.EncondingFilter</filter-class>
+ 	</filter>
+ 	
+ 	<filter-mapping>
+ 		<filter-name>EncondingFilter</filter-name>
+ 		<url-pattern>/*</url-pattern>
+ 	</filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckImgServlet</servlet-name>
+    <servlet-class>com.cn.utils.CheckImgServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckImgServlet</servlet-name>
+    <url-pattern>/CheckImgServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+	    <servlet-name>ValidateColorServlet</servlet-name>
+	    <servlet-class>com.cn.utils.ValidateColorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowIndexServlet</servlet-name>
+    <servlet-class>web.servlet.client.ShowIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>web.servlet.client.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ActiveUserServlet</servlet-name>
+    <servlet-class>web.servlet.client.ActiveUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>web.servlet.client.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>web.servlet.client.Logout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowProductByPageServlet</servlet-name>
+    <servlet-class>web.servlet.client.ShowProductByPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddcartServlet</servlet-name>
+    <servlet-class>web.servlet.client.AddcartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeCartServlet</servlet-name>
+    <servlet-class>web.servlet.client.ChangeCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindProductByIdServlet</servlet-name>
+    <servlet-class>web.servlet.client.FindProductByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateOrderServlet</servlet-name>
+    <servlet-class>web.servlet.client.CreateOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MenuSearchServlet</servlet-name>
+    <servlet-class>web.servlet.client.MenuSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ListProductServlet</servlet-name>
+    <servlet-class>web.servlet.manager.ListProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindProductByManyConditionServlet</servlet-name>
+    <servlet-class>web.servlet.manager.FindProductByManyConditionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNoticeServlet</servlet-name>
+    <servlet-class>web.servlet.manager.AddNoticeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditProductServlet</servlet-name>
+    <servlet-class>web.servlet.manager.EditProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>web.servlet.manager.DeleteProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>web.servlet.manager.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindOrdersServlet</servlet-name>
+    <servlet-class>web.servlet.manager.FindOrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindOrderByManyConditionServlet</servlet-name>
+    <servlet-class>web.servlet.manager.FindOrderByManyConditionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindOrderByIdServlet</servlet-name>
+    <servlet-class>web.servlet.manager.FindOrderByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelOrderByIdServlet</servlet-name>
+    <servlet-class>web.servlet.manager.DelOrderByIdServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <servlet-mapping>
+    <servlet-name>ValidateColorServlet</servlet-name>
+    <url-pattern>/ValidateColorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowIndexServlet</servlet-name>
+    <url-pattern>/ShowIndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActiveUserServlet</servlet-name>
+    <url-pattern>/ActiveUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowProductByPageServlet</servlet-name>
+    <url-pattern>/showProductByPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddcartServlet</servlet-name>
+    <url-pattern>/addCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeCartServlet</servlet-name>
+    <url-pattern>/changeCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindProductByIdServlet</servlet-name>
+    <url-pattern>/findProductById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateOrderServlet</servlet-name>
+    <url-pattern>/createOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuSearchServlet</servlet-name>
+    <url-pattern>/MenuSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListProductServlet</servlet-name>
+    <url-pattern>/listProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindProductByManyConditionServlet</servlet-name>
+    <url-pattern>/findProductByManyCondition</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNoticeServlet</servlet-name>
+    <url-pattern>/AddNoticeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditProductServlet</servlet-name>
+    <url-pattern>/editProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/deleteProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindOrdersServlet</servlet-name>
+    <url-pattern>/findOrders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindOrderByManyConditionServlet</servlet-name>
+    <url-pattern>/findOrderByManyCondition</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindOrderByIdServlet</servlet-name>
+    <url-pattern>/findOrderById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelOrderByIdServlet</servlet-name>
+    <url-pattern>/delOrderById</url-pattern>
+  </servlet-mapping>
+</web-app>
